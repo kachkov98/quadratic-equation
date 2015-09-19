@@ -11,7 +11,18 @@
 #define IsMoreZero(x) (x > DBL_EPSILON)
 #define IsLessZero(x) (x < -DBL_EPSILON)
 
-
+/**
+ * Function for finding roots
+ * 
+ * Function finds all possible roots of equation and returns the number of them
+ * 
+ *  @param A coefficient
+ *  @param B coefficient
+ *  @param C coefficient
+ *  @param first root pointer; if it is not exist, result is undefined
+ *  @param second root pointer; if it is not exist, result is undefined
+ *  @return number of roots
+ */
 int SolveEquation (double a, double b, double c, double *x1, double *x2)
 {
 	if (IsZero (a))
